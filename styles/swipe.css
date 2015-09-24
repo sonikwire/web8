@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* [next|previous] button styles */
+div.gallerynav { text-align:center; }
+  button.swgallery { 
+	 border: thin solid #565656;
+	 font-family: VaudDisplay-Thin; 
+	 font-size: 1em;
+	 color: #565656;
+	 padding: 0px 18px 0px 18px;
+	 margin: 2px;
+	 display: inline-block;
+	 background-color: rgba(0,0,0,0.75) !important;
+	 border-radius: 4px;
+  }
+  button.swgallery:hover { 
+	 border: thin solid #aaaaaa;
+	 font-family: VaudDisplay-Thin; 
+	 font-size: 1em;
+	 color: #aaaaaa;
+	 padding: 0px 18px 0px 18px;
+	 margin: 2px;
+	 display: inline-block;
+	 background-color: rgba(100,100,100,0.50) !important;
+	 border-radius: 4px;
+  }
+
+/* Swipe 2 required styles */
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}

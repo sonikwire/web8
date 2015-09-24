@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>sonikwire studio | mic museum : list</title>
+  <link href="styles/boilerplate.css" rel="stylesheet" type="text/css">
+  <link href="styles/fluid-grid.css?g=18" rel="stylesheet" type="text/css">
+  <link href="styles/custom.css?g=28" rel="stylesheet" type="text/css">
+  <script src="scripts/modernizr-2.8.3.html5.js"></script>
+  <script src="scripts/jquery-1.9.1.min.js"></script>
+  <script src="scripts/respond.min.js"></script>
+  <script src="scripts/contact.js"></script>
+  <script src="scripts/slidx.js"></script>	
+  <script src="scripts/swipe.js"></script>
+  <script src="scripts/smartresize.js"></script>
+  <script src="scripts/buildgallery.js"></script>
+  <script src="scripts/inlineheader.js?g=10"></script>
+  <script>
+	function xpnd(blurbdiv){ var myvar = $(blurbdiv).css('display'); if(myvar === "block"){ $(blurbdiv).hide("slow"); }else{ $(blurbdiv).show("slow"); }}
+  </script>
+  <style>
+	/* miclist classes */
+  	div#miclist_container { background-image:url(images/mics/bgi_miclist.jpg); background-repeat:no-repeat; background-position:1px 1px; width:1024px; padding:80px 0 150px 0; }
+	  div.mic-section-title { font-family:VaudDisplay-Thin; color:#ada7a6; font-size:2.4em; margin:0 0 20px 50px; font-weight:normal; letter-spacing:-2px; }
+		div.mic-grouping { width:450px; border-bottom:thin solid rgba(100,100,100,1.00); background-color:rgba(0,0,0,0.90); padding:10px 0 14px 0; margin:0 0 10px 0; } 
+		div.mic-odd { float:left; display:inline-block; position:relative; margin:0 0 0 50px; }
+		div.mic-even { float:right; display:inline-block; position:relative; margin:0 50px 0 0; } 
+		  div.mic-title { font-family:VaudDisplay-Thin; color:white; font-size:1.4em; margin:0 0 0 75px; }
+		  div.mic-subtitle { font-family:VaudDisplay-Medium; color:#575757; margin:0 0 0 75px; line-height:0.85em; font-weight:bold; }
+		  div.mic-blurb { font-family:VaudDisplay; color:#bdbdbd; margin:16px 0 0 75px; font-size:0.8em; line-height:1.1em; padding:0 20px 0 0; }
+			div.mic-vintage { font-family:VaudDisplay-Medium; color:#6d1709; font-size:0.55em; float:right; font-weight:bold; display:inline-block; margin:4px 20px 0 0; }
+	/* miclist icons */
+	div#neumannU47 { background-image:url(images/mics/neumann-u47@2x.png); background-repeat:no-repeat; background-position:10px -5px; background-size:55px auto; }
+	div#telefunkenElam251 { background-image:url(images/mics/telefunken-elam251@2x.png); background-repeat:no-repeat; background-position:10px -5px; background-size:55px auto; }
+	div#akgC12 { background-image:url(images/mics/akg-c12@2x.png); background-repeat:no-repeat; background-position:10px -5px; background-size:55px auto; }
+	div#sonyC800g { background-image:url(images/mics/sony-c800g@2x.png); background-repeat:no-repeat; background-position:10px -5px; background-size:55px auto; }
+	div#braunerVM1 { background-image:url(images/mics/brauner-vm1@2x.png); background-repeat:no-repeat; background-position:10px -5px; background-size:55px auto; }
+	div#neumannM49 { background-image:url(images/mics/neumann-m49_front-back@2x.png); background-repeat:no-repeat; background-position:10px -5px; background-size:55px auto; }
+  </style>
+</head>
+<body>
+<div id="miclist_container" class="clearfix">
+  <div class="mic-section-title">Vintage Microphones</div>
+  <div class="mic-odd">
+    <div id="neumannU47" class="mic-grouping clearfix" onClick="xpnd('#neumannU47-blurb')">
+      <div class="mic-title">Neumann U47<div class="mic-vintage">VINTAGE</div></div><div class="mic-subtitle">Vintage + Klaus Heyne Modified</div>
+      <div id="neumannU47-blurb" class="mic-blurb clearfix">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dolor dui, auctor ac magna id, posuere varius sapien. Mauris at sapien in enim semper ultricies. Morbi mollis malesuada felis non sodales. Nam luctus posuere turpis. In hac habitasse platea dictumst.
+      </div>
+    </div>
+    <div id="akgC12" class="mic-grouping clearfix" onClick="xpnd('#akgC12-blurb')">
+      <div class="mic-title">AKG C-12<div class="mic-vintage">VINTAGE</div></div><div class="mic-subtitle">Vintage + Klaus Heyne Modified</div>
+      <div id="akgC12-blurb" class="mic-blurb clearfix">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dolor dui, auctor ac magna id, posuere varius sapien. Mauris at sapien in enim semper ultricies. Morbi mollis malesuada felis non sodales. Nam luctus posuere turpis. In hac habitasse platea dictumst.
+      </div>
+    </div>
+    <div id="braunerVM1" class="mic-grouping clearfix" onClick="xpnd('#braunerVM1-blurb')">
+      <div class="mic-title">Brauner VM1</div><div class="mic-subtitle">Klaus Heyne Edition</div>
+      <div id="braunerVM1-blurb" class="mic-blurb clearfix">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dolor dui, auctor ac magna id, posuere varius sapien. Mauris at sapien in enim semper ultricies. Morbi mollis malesuada felis non sodales. Nam luctus posuere turpis. In hac habitasse platea dictumst.
+      </div>
+    </div>
+  </div>
+  <div class="mic-even">
+    <div id="telefunkenElam251" class="mic-grouping clearfix" onClick="xpnd('#telefunkenElam251-blurb')">
+      <div class="mic-title">Telefunken ELA M251<div class="mic-vintage">VINTAGE</div></div><div class="mic-subtitle">Vintage + Klaus Heyne Modified</div>
+      <div id="telefunkenElam251-blurb" class="mic-blurb clearfix">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dolor dui, auctor ac magna id, posuere varius sapien. Mauris at sapien in enim semper ultricies. Morbi mollis malesuada felis non sodales. Nam luctus posuere turpis. In hac habitasse platea dictumst.
+      </div>
+    </div>
+    <div id="sonyC800g" class="mic-grouping clearfix" onClick="xpnd('#sonyC800g-blurb')">
+      <div class="mic-title">Sony C-800 G</div><div class="mic-subtitle">Klaus Heyne Modified</div>
+      <div id="sonyC800g-blurb" class="mic-blurb clearfix">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dolor dui, auctor ac magna id, posuere varius sapien. Mauris at sapien in enim semper ultricies. Morbi mollis malesuada felis non sodales. Nam luctus posuere turpis. In hac habitasse platea dictumst.
+      </div>
+    </div>
+    <div id="neumannM49" class="mic-grouping clearfix" onClick="xpnd('#neumannM49-blurb')">
+      <div class="mic-title">Neumann M49<div class="mic-vintage">VINTAGE</div></div><div class="mic-subtitle">Vintage + Klaus Heyne Modified</div>
+      <div id="neumannM49-blurb" class="mic-blurb clearfix">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dolor dui, auctor ac magna id, posuere varius sapien. Mauris at sapien in enim semper ultricies. Morbi mollis malesuada felis non sodales. Nam luctus posuere turpis. In hac habitasse platea dictumst.
+      </div>
+    </div>    
+  </div>
+</div>
+<script>
+  $('#neumannU47-blurb').hide(); $('#akgC12-blurb').hide(); //$('#braunerVM1-blurb').hide();
+  $('#sonyC800g-blurb').hide(); $('#neumannM49-blurb').hide(); //$('#telefunkenElam251-blurb').hide();
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>sonikwire studio | equipment</title>
+  <link href="styles/boilerplate.css" rel="stylesheet" type="text/css">
+  <link href="styles/fluid-grid.css?g=18" rel="stylesheet" type="text/css">
+  <link href="styles/custom.css?g=28" rel="stylesheet" type="text/css">
+  <script src="scripts/modernizr-2.8.3.html5.js"></script>
+  <script src="scripts/jquery-1.9.1.min.js"></script>
+  <script src="scripts/respond.min.js"></script>
+  <script src="scripts/contact.js"></script>
+  <script src="scripts/slidx.js"></script>	
+  <script src="scripts/swipe.js"></script>
+  <script src="scripts/smartresize.js"></script>
+  <script src="scripts/buildgallery.js"></script>
+  <script src="scripts/inlineheader.js?g=10"></script>
+  <style>
+    div.eq-section-shell { margin:0; }
+      div.eq-section-heading { font-family:VaudDisplay-Medium; background-color:rgba(0,0,0,0.85); color:white; font-size:0.8em; padding:4px 0 4px 10px; border-bottom: thin solid #555555; }
+	  div.eq-section-heading-dim { font-family:VaudDisplay; background-color:rgba(0,0,0,0.65); color:#777777; font-size:0.8em; padding:4px 0 4px 10px; border-bottom: thin solid #555555; }
+		div.eq-section-heading-dim:hover { background-color:rgba(0,0,0,0.90); color:#cacaca; }
+		  div.eq-toggle-icon {  float:right; color:white; margin:0 10px 0 0; background-image:url(images/ico_xpnd@2x.png?a=1); background-repeat:no-repeat; 
+								background-size:16px 16px; background-position:0px 2px; width:16px; height:16px; }
+    /* content sections */	
+    div#eq-body-controlroom { padding:6px 10px 14px 10px; background-color:rgba(255,255,255,0.35); color:black; border-bottom: thin solid #555555; }
+    div#eq-body-outboard { padding:6px 10px 14px 10px; background-color:rgba(255,255,255,0.35); color:black; border-bottom: thin solid #555555; }
+    div#eq-body-mics { padding:6px 10px 14px 10px; background-color:rgba(255,255,255,0.35); color:black; border-bottom: thin solid #555555; }
+  </style>
+  <script>
+    function eqacrdn(section,icon,heading) { 
+	  $('#hdg-controlroom').removeClass("eq-section-heading").addClass("eq-section-heading-dim"); $('#hdg-outboard').removeClass("eq-section-heading").addClass("eq-section-heading-dim"); 
+	  $('#hdg-mics').removeClass("eq-section-heading").addClass("eq-section-heading-dim"); $(heading).removeClass("eq-section-heading-dim").addClass("eq-section-heading");
+	  $('#eq-body-controlroom').hide("slow"); $('#eq-body-outboard').hide("slow"); $('#eq-body-mics').hide("slow"); 
+	  $('#icn-controlroom').show("slow"); $('#icn-outboard').show("slow"); $('#icn-mics').show("slow"); $(section).show("slow"); $(icon).hide("slow"); 
+	}
+  </script>
+</head>
+<body>
+
+<div style="background-image:url(images/bgi_dcontrol-racks.jpg); background-size:auto; background-repeat:no-repeat; background-size:100% auto; padding:20px;">
+
+  <div class="eq-section-shell">
+    <div id="hdg-controlroom" class="eq-section-heading" onClick="eqacrdn('#eq-body-controlroom','#icn-controlroom','#hdg-controlroom')">
+      <div id="icn-controlroom" class="eq-toggle-icon"></div>CONTROL ROOM</div>
+    <div id="eq-body-controlroom">
+      <br><br><br><br><br><br>
+    </div>
+  </div>
+  
+  <div class="eq-section-shell">
+    <div id="hdg-outboard" class="eq-section-heading-dim" onClick="eqacrdn('#eq-body-outboard','#icn-outboard','#hdg-outboard')">
+      <div id="icn-outboard" class="eq-toggle-icon"></div>MIC PREs, EQs, COMPRESSORS &amp; EFFECTS</div>
+    <div id="eq-body-outboard">
+      <br><br><br><br><br><br>
+    </div>
+  </div>
+  
+  <div class="eq-section-shell">
+    <div id="hdg-mics" class="eq-section-heading-dim" onClick="eqacrdn('#eq-body-mics','#icn-mics','#hdg-mics')">
+      <div id="icn-mics" class="eq-toggle-icon"></div>MICROPHONES</div>
+    <div id="eq-body-mics">
+      <br><br><br><br><br><br>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $('#eq-body-outboard').hide(); $('#eq-body-mics').hide(); $('#icn-controlroom').hide(); 
+</script>
+</body>
+</html>

@@ -1,0 +1,488 @@
+@charset "utf-8";
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2df79a");
+  
+@font-face {font-family: 'VaudDisplay';src: url('../webfonts/2DF79A_0_0.eot');src: url('../webfonts/2DF79A_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/2DF79A_0_0.woff2') format('woff2'),url('../webfonts/2DF79A_0_0.woff') format('woff'),url('../webfonts/2DF79A_0_0.ttf') format('truetype');}
+  
+@font-face {font-family: 'VaudDisplay-Medium';src: url('../webfonts/2DF79A_1_0.eot');src: url('../webfonts/2DF79A_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/2DF79A_1_0.woff2') format('woff2'),url('../webfonts/2DF79A_1_0.woff') format('woff'),url('../webfonts/2DF79A_1_0.ttf') format('truetype');}
+  
+@font-face {font-family: 'VaudDisplay-Thin';src: url('../webfonts/2DF79A_2_0.eot');src: url('../webfonts/2DF79A_2_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/2DF79A_2_0.woff2') format('woff2'),url('../webfonts/2DF79A_2_0.woff') format('woff'),url('../webfonts/2DF79A_2_0.ttf') format('truetype');}
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+
+/* BODY text defaults | background-image:url(../images/bgi_studio-skylights.jpg); */
+html, body { 
+	background-color:rgba(0,0,0,1.00);
+	font-family: VaudDisplay;
+	color:#C9C9C9; 
+	background-size:100% auto; 
+	background-repeat:no-repeat; 
+	margin:0px;	
+	padding:0;
+	height:100%;
+}
+
+/* default link styles */
+a { text-decoration:none; color:#c9c9c9; }
+a:active, a:link, a:hover { text-decoration:none; color:#ffffff; }
+
+/* web fonts */
+.VaudDisplay { font-family: VaudDisplay; }/* font-size: 3em; */
+.VaudDisplay-Medium { font-family: VaudDisplay-Medium; }/* font-size: 3em; */
+.VaudDisplay-Thin { font-family: VaudDisplay-Thin; }/* font-size: 3em; */
+
+/* slidx menu */
+ul { padding:0px; margin: 0px; }
+li { list-style: none; }
+#slidx_menu { margin:60px 0 0 0; background-color: rgba(45,45,45,0.95) !important; } /* rgba(37,37,37,0.95) */
+#slidx_menu a { font-family:VaudDisplay-Thin; font-size:1.6em; padding:18px 0px 18px 15px; display:block; 
+				color:rgba(125,125,125,1.00); border-bottom:thin solid #373737; -webkit-tap-highlight-color:rgba(55,55,55,0.95); }
+#slidx_menu a:hover { font-family:VaudDisplay-Thin; font-size:1.6em; color:#efefef; background-color:rgba(55,55,55,0.95); cursor:pointer; }
+#slidx_button { padding:0; margin:0; }	/* old static button */
+#slidx_button:hover { cursor:pointer; } /* old static button */
+
+/* heading styles */
+H1, H2, H3, H4, H5, H6 { font-family: VaudDisplay; font-weight:normal; }
+
+/* make larger page title */
+H1.pagetitlemain { 
+	padding:0px; 
+	margin:20px 0 10px 0; 
+	font-family:VaudDisplay-Thin; 
+	font-weight:normal; 
+	font-size:2.9em; 
+	color: rgba(255,255,255,1.00) !important; 
+	text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.95);
+}
+H1.pagetitledark { 
+	padding:0px; 
+	margin:20px 0 10px 0; 
+	font-family:VaudDisplay-Thin; 
+	font-weight:normal; 
+	font-size:2.9em; 
+	color: #404040; 
+}
+H1.pagetitlegrey { 
+	padding:0px; 
+	margin:20px 0 10px 0; 
+	font-family:VaudDisplay-Thin; 
+	font-weight:normal; 
+	font-size:2.9em; 
+	color:#7e6854; 
+}
+H1.pagetitlebleu { 
+	padding:0px; 
+	margin:20px 0 10px 0; 
+	font-family:VaudDisplay-Thin; 
+	font-weight:normal; 
+	font-size:2.9em; 
+	color:#326877; 
+}
+H1.pagetitlereflection {
+	padding: 0px;
+	margin: 20px 0 10px 0;
+	font-family: VaudDisplay-Thin;
+	font-weight: normal;
+	font-size: 2.9em;
+	background-image: url(../images/glass-reflection.jpg);
+	-webkit-background-clip: text, border;
+	color: transparent;
+}
+
+/* header */
+div#swheader {
+	background-color: rgba(0,0,0,0.85) !important;
+	padding: 12px 0 12px 0;
+	z-index: 200 !important;
+	position: fixed;
+	border-bottom: thin solid #373737;
+}
+
+/* push content down from fixed masthead */
+div.swcontentmain { padding:0 0 40px 0; margin:60px 0 0 0; }
+
+/* footer */
+div#swfooter {
+	/* background-color: rgba(68,68,68,0.90) !important; */
+	padding: 20px 0 10px 0;
+	margin:0;
+	color:rgba(154,152,152,1.00);
+	font-family: VaudDisplay-Thin;
+	font-weight: normal;
+	font-size: 1em;
+	-webkit-box-shadow: inset 0px 17px 13px -13px rgba(0,0,0,0.44);
+	-moz-box-shadow: inset 0px 17px 13px -13px rgba(0,0,0,0.44);
+	box-shadow: inset 0px 17px 13px -13px rgba(0,0,0,0.44);			
+}
+/* footer nav links */
+a.footerlink, 
+a.footerlink:active, 
+a.footerlink:visited { text-decoration:none; color:white; font-family:VaudDisplay-Thin; font-size:1em; }
+  a.footerlink:hover { text-decoration:underline; color:white; font-family:VaudDisplay-Thin; font-size:1em; }
+/* footer (pdf) download links */
+a.footerdownload, 
+a.footerdownload:active, 
+a.footerdownload:visited { text-decoration:none; color:#C9C9C9; font-family:VaudDisplay-Thin; font-size:1em; }
+  a.footerdownload:hover { text-decoration:underline; color:#C9C9C9; font-family:VaudDisplay-Thin; font-size:1em; }  
+/* legal statements */
+div.legal { padding:0; margin:6px 0 0 0; font-size:0.8em; } /* push down from footerlinks */
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+
+/* gallery launcher icon */
+div#galleryLinkLauncher { z-index:50; text-align:right; position:absolute; top:75px; width:97%; }
+  div#view-gallery { position:relative; float:right; border-radius:20px; background:url(../images/btn_gallery@2x.png) no-repeat; background-size:98px 30px; 
+                     width:98px; height:30px; opacity:0.75; background-color:white; }
+	div#view-gallery:hover { opacity:0.9; }
+
+/* gallery container (unique case) */
+div#gallery-container {
+	z-index: 300;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	max-width: 1920px;
+	width: 101.5%; /* special case for Chrome scrollbar clipping issue */
+	height: 100%;
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: black !important;
+	margin:0 auto;
+	padding:0;
+	clear: both;
+} 
+
+/* gallery EXIT nav (top right) */
+div#galleryExitNavOver { z-index:310; position: fixed; width:100%; top:0; }
+  div#galleryExitNavOver div#galleryHide {
+	display:inline-block; float:right; width:40px; height:40px; border-radius:50%; color:#ffffff; background-color:transparent; padding:0; opacity:0.35; 
+	border:0px; text-align:center; vertical-align:central; font-family:VaudDisplay-Medium; font-size:1.2em; margin:15px; 
+	background-image:url(../images/ico_exit@2x.png); background-repeat:no-repeat; background-position:center center; background-size:20px 20px; 
+	transition: background .5s ease-in-out; -moz-transition: background .5s ease-in-out; -webkit-transition: background .5s ease-in-out; }
+	  div#galleryExitNavOver div#galleryHide:hover { background-color:rgba(180,0,3,0.85); color:white; opacity:1; }
+
+/* display image title when available */
+div#imageCaption {
+	margin:0px auto; 
+	padding:2px;
+	background-color: rgba(0,0,0,0.5);
+	color:white;
+	font-family: VaudDisplay-Thin; 
+	font-size:1.2em;
+	border-radius: 6px;
+	width: 40%;
+	align-self:center;
+	align-content:center;
+}  
+  
+/* gallery PREV | NEXT nav (moved into fluid-grid.css)
+div#galleryNavOver { z-index:310; position:fixed; width:100%; height:67%; top:33%; text-align:center; }
+  div#galleryNavOver button#galleryPrev { display:inline-block; float:left; width:80px; height:50%; color:#ffffff; background-color:transparent; padding:0 10px 0 10px;
+	opacity:0.35; border:0; font-family:VaudDisplay-Thin; font-size:3em; }
+  div#galleryNavOver button#galleryNext { display:inline-block; float:right; width:80px; height:50%; color:#ffffff; background-color:transparent; padding:0 10px 0 10px;
+	opacity:0.35; border:0; font-family:VaudDisplay-Thin; font-size:3em; }
+  div#galleryNavOver button#galleryPrev:hover, div#galleryNavOver button#galleryNext:hover { background-color:rgba(0,0,0,0.25); color:white; opacity:1.0; }
+*/
+
+/* (this is no longer in use)
+div.galleryNavGradient { 
+background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); / FF3.6+ /
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); / Chrome,Safari4+ /
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); / Chrome10+,Safari5.1+ /
+background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); / Opera 11.10+ /
+background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); / IE10+ /
+background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); / W3C /
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); / IE6-9/
+}*/
+
+/* gallery style, not swipe */
+img.homeFeatureImg { 
+	position: relative;
+	display: block; 
+	height: auto; 
+	width: auto; 
+	padding: 0;
+	margin: 0 auto;
+} 
+/* gallery images */
+img.galleryImg { 
+	position: relative;
+	display: block; 
+	height: auto; 
+	width: auto; 
+	padding: 0;
+	margin: 0 auto;
+} 
+/* [next|previous] button styles */
+div.gallerynav { text-align:center; }
+  button.swgallery { 
+	 border: thin solid #565656;
+	 font-family: VaudDisplay-Thin; 
+	 font-size: 1em;
+	 color: #565656;
+	 padding: 0px 18px 0px 18px;
+	 margin: 2px;
+	 display: inline-block;
+	 background-color: rgba(0,0,0,0.75) !important;
+	 border-radius: 4px;
+  }
+  button.swgallery:hover { 
+	 border: thin solid #aaaaaa;
+	 font-family: VaudDisplay-Thin; 
+	 font-size: 1em;
+	 color: #aaaaaa;
+	 padding: 0px 18px 0px 18px;
+	 margin: 2px;
+	 display: inline-block;
+	 background-color: rgba(100,100,100,0.50) !important;
+	 border-radius: 4px;
+  }
+  
+/* streamlined gallery top navigation 
+div#galNav { background-color: rgba(0,0,0,0.85); color:white; margin:0px; padding:0px; font-family:VaudDisplay-Thin; font-size:1.5em; display:inline-block; 
+			  border-bottom:thin solid #3F3F3F; width:100%; height:40px; }
+div#galExit { float:right; display:inline-block; padding:0px; margin:0px 20px 0px 0px; height:40px; width:40px; background-color:#3F3F3F; opacity:0.4;
+				background-image:url(../images/ico_exit@2x.png); background-repeat:no-repeat; background-position:center center; background-size:20px 20px;  }
+div#galNavNested { background-color:black; margin:0px; padding:0px; height:40px; } 
+  div#galLt { float:left; display:inline-block; margin:0px; padding:0px; height:40px; width:40px; background-color:black; opacity:0.25;
+				background-image:url(../images/ico_prev@2x.png); background-repeat:no-repeat; background-position:center center; background-size:20px 20px;  }
+  div#galRt { float:right; display:inline-block; margin:0px; padding:0px; height:40px; width:40px; background-color:black; opacity:0.25;
+				background-image:url(../images/ico_next@2x.png); background-repeat:no-repeat; background-position:center center; background-size:20px 20px;  }
+	div#galTitle { color:efefef; display:inline-block; margin:0px; padding:0px; height:40px; }
+div#galLt:hover, div#galRt:hover { opacity:1.0; }
+div#galExit:hover { background-color:rgba(158,0,2,0.85); opacity:1.0; } */
+
+/* Swipe 2 required styles */
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+
+/* equipment list styles */
+div.eq-section-shell { margin:0; }
+  div.eq-section-heading { font-family:VaudDisplay-Medium; background-color:rgba(0,0,0,0.85); color:#b8aca1; font-size:1.1em; padding:4px 0 4px 10px; border-bottom: thin solid #1e1711; }
+  div.eq-section-heading-dim {  font-family:VaudDisplay; background-color:rgba(38,28,19,0.75); color:#635344; font-size:1.1em; padding:4px 0 4px 10px; border-bottom:thin solid #1e1711; 
+								text-shadow:0px 0px 10px rgba(38,28,19,0.4); }
+	div.eq-section-heading-dim:hover { background-color:rgba(38,28,19,0.90); color:#aea293; text-shadow:none; }
+	  div.eq-toggle-icon {  float:right; color:white; margin:0 10px 0 0; background-image:url(../images/ico_xpnd@2x.png?a=1); background-repeat:no-repeat; 
+							background-size:20px 20px; background-position:0px 2px; width:20px; height:20px; }
+/* equipment list content sections */	
+div#eq-body-controlroom { padding:6px 10px 14px 10px; background-color:rgba(148,130,112,0.65); color:black; border-bottom: thin solid #221f1c; }
+div#eq-body-outboard { padding:6px 10px 14px 10px; background-color:rgba(148,130,112,0.65); color:black; border-bottom: thin solid #221f1c; }
+div#eq-body-mics { padding:6px 10px 14px 10px; background-color:rgba(148,130,112,0.65); color:black; border-bottom: thin solid #221f1c; }
+
+/* equipment list items (moved to fluid-grid.css)
+div.eql-column { width:50%; float:left; }
+  div.eql-grouping-2col { clear:both; margin-bottom:10px; }
+	div.eql-subhead-2col { float:left; position:relative; width:30%; text-align:right; padding:2.5%; font-size:0.9em; font-family:VaudDisplay-Medium; line-height:1.3em; font-weight:bold; }
+	  div.eql-itembox-2col { float:right; width:60%; padding:2.5%; font-family:VaudDisplay; font-size:0.9em; line-height:1.3em; color:black; }
+		div.eql-itembox-2col div { line-height:1.3em; }
+		  div.eql-qty { display:inline-block; color:rgba(38,28,19,0.75); } */
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+
+/* subnav */
+div.subnavcontainer { margin-bottom:20px; text-align:center; }
+ul.subnav { display:inline; border:0; margin:0; }
+ul.subnav li { display:inline; padding:0; margin:0 10px 0 10px; }
+a.subnavlink, a.subnavlink:visited { text-decoration:none; color:rgba(125,125,125,1.00); font-family:VaudDisplay-Thin; font-size:1.3em; }
+a.subnavlink:hover { text-decoration:none; color:rgba(200,200,200,1.00); font-family:VaudDisplay-Thin; font-size:1.3em; }
+ul.subnav li.activelink a.subnavlink { text-decoration:none; color:#ffffff; font-family:VaudDisplay; font-size:1.3em; }
+
+/* logo */
+div#mainlogo { height:36px; text-align:left; margin:0px; padding:0px; }
+
+/* gradients */
+.grad_grey {
+  background: -webkit-linear-gradient(#575757, #171717); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#575757, #171717); 	 /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#575757, #171717);	 /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#575757, #171717); 		 /* Standard syntax */
+}
+.grad_footer {
+  background: -webkit-linear-gradient(#686868, #000000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#686868, #000000); 	 /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#686868, #000000);	 /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#686868, #000000); 		 /* Standard syntax */
+}
+.grad_bleu {
+  background: -webkit-linear-gradient(#232725, #000000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#232725, #000000); 	 /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#232725, #000000);	 /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#232725, #000000); 		 /* Standard syntax */
+}
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+
+#nav-toggle { cursor: pointer; padding: 8px 28px 12px 0px; margin-top:10px; float:right; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 28px;
+  background: #b7b7b7;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -8px; 
+}
+#nav-toggle span:after {
+  bottom: -8px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg); /* Internet Explorer */
+  -moz-transform: rotate(45deg); /* Firefox */
+  -webkit-transform: rotate(45deg); /* Safari and Chrome */
+  -o-transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(315deg);
+}
+
+/***********************************************************************************
+  the following styles were moved to fluid-grid.css for device specific settings:
+************************************************************************************   
+  #contact-form { 
+	  padding:3% 0 0 3%; 
+	  background-color: rgba(25,25,25,0.95) !important;
+  }
+  
+  #contact-form textarea { height:80px; resize: none; }
+  #contact-form label { display:block; color:white; padding:0; font-size:0.9em; } 
+  #contact-form .required { font-weight:bold; color:#F00;	}
+  
+  div.formfieldgroup { width:50%; float:left; }
+
+***********************************************************************************/
+
+/* form description style */
+div#formdescription { padding:0; margin:0 0 20px 0; }
+div.formshim { padding:0; margin:0 0 10px 0; }
+
+/* input display styles */
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea{
+	font-size:1em;
+	font-family:VaudDisplay;
+}
+#contact-form label {
+	font-size:1em;
+	font-family:VaudDisplay;
+}
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+	border: thin solid #939393;
+	color:black;
+	background-color: rgba(245,245,245,1.00); 
+	margin: 0 0 6px 0;
+	padding: 0;
+	width: 94%;
+} 
+#contact-form input:focus, 
+#contact-form select:focus, 
+#contact-form textarea:focus {
+	border: thin solid #939393;
+	background-color:white;
+}
+
+/* submit button styles */
+#contact-form input#submit-button {
+	width: 100px;
+	background-color: rgba(155,155,155,1.00);
+	color:black;
+	border:none;
+	display:block;
+	margin:0; 
+}
+#contact-form input#submit-button:hover { color:black; background-color:white; }
+#contact-form input#submit-button:active { position:relative; top:1px; }
+
+
+/* error message styles */
+#errors {
+	border: 1px solid #FB2D2D;
+	color: #FB2D2D;
+	background-color: rgba(255,255,255,0.50);
+	padding: 10px;
+	margin: 20px 0 20px 0;
+	display: block;
+	font-family: VaudDisplay;
+	font-size: 1em;
+	text-align: center;
+	display: none;
+}
+#errors li { padding:2px; list-style:none; }
+#errors li:before { content: ' - ';	}
+#errors #info { font-weight:bold; }
+#errors #info:before { content: '';	}
+
+/* success message styles */
+#success {
+	border: 1px solid #53D959;
+	color: #53D959;
+	background-color: rgba(255,255,255,0.50);
+	padding: 10px;
+	margin: 20px 0 20px 0;
+	display: block;
+	font-family: VaudDisplay;
+	font-size: 1em;
+	text-align: center;
+	display: none;
+}
+
+#errors.visible, #success.visible { display:block; }
+#req-field-desc { font-size:0.9em; padding:0; margin:0; color:#A1A1A1; } 
+
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	-o-box-shadow:none;
+	box-shadow:none;
+}
+
+/* Normalize placeholder styles */
+::-webkit-input-placeholder { color: rgba(160,160,160,1.00); font-size:1em; } /* chrome, safari */
+input:-moz-placeholder, textarea:-moz-placeholder { color: rgba(160,160,160,1.00); font-size:1em; } /* mozilla */
+input.placeholder-text, textarea.placeholder-text  { color: rgba(160,160,160,1.00); font-size:1em; } /* ie (faux placeholder) */
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/

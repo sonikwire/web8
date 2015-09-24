@@ -1,0 +1,104 @@
+/***********************************************************************************
+  the following styles were moved to fluid-grid.css for device specific settings:
+************************************************************************************   
+  #contact-form { 
+	  padding:3% 0 0 3%; 
+	  background-color: rgba(25,25,25,0.95) !important;
+  }
+  
+  #contact-form textarea { height:80px; resize: none; }
+  #contact-form label { display:block; color:white; padding:0; font-size:0.9em; } 
+  #contact-form .required { font-weight:bold; color:#F00;	}
+  
+  div.formfieldgroup { width:50%; float:left; }
+
+***********************************************************************************/
+
+/* form description style */
+div#formdescription { padding:0; margin:0 0 20px 0; }
+div.formshim { padding:0; margin:0 0 10px 0; }
+
+/* input display styles */
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea{
+	font-size:1em;
+	font-family:VaudDisplay;
+}
+#contact-form label {
+	font-size:0.9em;
+	font-family:VaudDisplay;
+}
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+	border: thin solid #939393;
+	color:black;
+	background-color: rgba(245,245,245,1.00); 
+	margin: 0 0 6px 0;
+	padding: 0;
+	width: 94%;
+} 
+#contact-form input:focus, 
+#contact-form select:focus, 
+#contact-form textarea:focus {
+	border: thin solid #939393;
+	background-color:white;
+}
+
+/* submit button styles */
+#contact-form input#submit-button {
+	width: 100px;
+	background-color: rgba(155,155,155,1.00);
+	color:black;
+	border:none;
+	display:block;
+	margin:0; 
+}
+#contact-form input#submit-button:hover { color:black; background-color:white; }
+#contact-form input#submit-button:active { position:relative; top:1px; }
+
+
+/* error message styles */
+#errors {
+	border: 1px solid #FB2D2D;
+	color: #FB2D2D;
+	padding: 20px;
+	margin: 20px 0 20px 0;
+	display: block;
+	font-family: VaudDisplay;
+	font-size:1em;
+	display: none;
+}
+#errors li { padding:2px; list-style:none; }
+#errors li:before { content: ' - ';	}
+#errors #info { font-weight:bold; }
+#errors #info:before { content: '';	}
+
+/* success message styles */
+#success {
+	border: 1px solid #53D959;
+	color: #53D959;
+	padding: 20px;
+	margin: 20px 0 20px 0;
+	display: block;
+	font-family: VaudDisplay;
+	font-size:1em;
+	display: none;
+}
+
+#errors.visible, #success.visible { display:block; }
+#req-field-desc { font-size:0.9em; padding:0; margin:0; } 
+
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	-o-box-shadow:none;
+	box-shadow:none;
+}
+
+/* Normalize placeholder styles */
+::-webkit-input-placeholder { color: rgba(122,122,122,1.00); font-size:0.9em; } /* chrome, safari */
+input:-moz-placeholder, textarea:-moz-placeholder { color: rgba(122,122,122,1.00); font-size:0.9em; } /* mozilla */
+input.placeholder-text, textarea.placeholder-text  { color: rgba(122,122,122,1.00); font-size:0.9em; } /* ie (faux placeholder) */
