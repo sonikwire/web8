@@ -48,18 +48,18 @@ if( isset($_POST) ){
 	
 	//send email if all is ok
 	if($formok){
-		$headers = "From: website@sonikwire.com" . "\r\n";
+		$headers = "From: contact@sonikwire.com" . "\r\n";
 		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 		
-		$emailbody = "<p>You have recieved a new message from the enquiries form on your website.</p>
+		$emailbody = "<p>You have recieved a new message from the inquiries form on your website.</p>
 					  <p><strong>Name: </strong> {$name} </p>
 					  <p><strong>Email Address: </strong> {$email} </p>
 					  <p><strong>Telephone: </strong> {$telephone} </p>
-					  <p><strong>Enquiry: </strong> {$enquiry} </p>
+					  <p><strong>Inquiry: </strong> {$enquiry} </p>
 					  <p><strong>Message: </strong> {$message} </p>
 					  <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>";
 		
-		mail("josh@sonikwire.com","New Client Inquiry",$emailbody,$headers);
+		mail("contact@sonikwire.com","New Client Inquiry",$emailbody,$headers);
 		
 	}
 	
